@@ -61,8 +61,6 @@ $ex4_hobbies_input = isset($_POST['ex4-hobbies']) ? $_POST['ex4-hobbies'] : '';
                                     <input type="text" name="fahrenheit" class="form-control">
                                 </div>
                             </div>
-
-                            <input type="hidden" name="exercise" value="1">
                             <input type="submit" class="btn btn-primary">
                         </form>
                     </div>
