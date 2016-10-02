@@ -7,31 +7,31 @@
  */
 
 # Exercise 1
-$ex1_fahrenheit_input = $_POST['fahrenheit'] ?? '0';
+$ex1_fahrenheit_input = isset($_POST['fahrenheit']) ? $_POST['fahrenheit'] : '0';
 $celsius_output = 0;
 if (isset($_POST['fahrenheit'])) {
     $celsius_output = ($ex1_fahrenheit_input - 32) * (5/9);
 }
 
 # Exercise 2
-$ex2_one_input = $_POST['ex2-one'] ?? '0';
-$ex2_two_input = $_POST['ex2-two'] ?? '0';
+$ex2_one_input = isset($_POST['ex2-one']) ? $_POST['ex2-one'] : '0';
+$ex2_two_input = isset($_POST['ex2-two']) ? $_POST['ex2-two'] : '0';
 $ex2_result = $ex2_one_input + $ex2_two_input;
 
 # Exercise 3
-$ex3_height_input = $_POST['ex3-height'] ?? '0';
-$ex3_weight_input = $_POST['ex3-weight'] ?? '0';
+$ex3_height_input = isset($_POST['ex3-height']) ? $_POST['ex3-height'] : '0';
+$ex3_weight_input = isset($_POST['ex3-weight']) ? $_POST['ex3-weight'] : '0';
 $ex3_result = 0;
 if ($ex3_height_input != 0 || $ex3_weight_input != '0') {
     $ex3_result = $ex3_weight_input / ($ex3_height_input/100)**2;
 }
 
 # Exercise 4
-$ex4_name_input = $_POST['ex4-name'] ?? '';
-$ex4_age_input = $_POST['ex4-age'] ?? '';
-$ex4_gender_input = $_POST['ex4-gender'] ?? '';
-$ex4_language_input = $_POST['ex4-language'] ?? '';
-$ex4_hobbies_input = $_POST['ex4-hobbies'] ?? '';
+$ex4_name_input = isset($_POST['ex4-name']) ? $_POST['ex4-name'] : '';
+$ex4_age_input = isset($_POST['ex4-age']) ? $_POST['ex4-age'] : '';
+$ex4_gender_input = isset($_POST['ex4-gender']) ? $_POST['ex4-gender'] : '';
+$ex4_language_input = isset($_POST['ex4-language']) ? $_POST['ex4-language'] : '';
+$ex4_hobbies_input = isset($_POST['ex4-hobbies']) ? $_POST['ex4-hobbies'] : '';
 ?>
 
 <!doctype html>
