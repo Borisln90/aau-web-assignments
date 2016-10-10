@@ -8,9 +8,9 @@
 
 # Exercise 1
 $ex1_fahrenheit_input = isset($_POST['fahrenheit']) ? $_POST['fahrenheit'] : '0';
-$celsius_output = 0;
+$ex1_celsius_output = 0;
 if (isset($_POST['fahrenheit'])) {
-    $celsius_output = ($ex1_fahrenheit_input - 32) * (5/9);
+    $ex1_celsius_output = ($ex1_fahrenheit_input - 32) * (5/9);
 }
 
 # Exercise 2
@@ -23,7 +23,7 @@ $ex3_height_input = isset($_POST['ex3-height']) ? $_POST['ex3-height'] : '0';
 $ex3_weight_input = isset($_POST['ex3-weight']) ? $_POST['ex3-weight'] : '0';
 $ex3_result = 0;
 if ($ex3_height_input != 0 || $ex3_weight_input != '0') {
-    $ex3_result = $ex3_weight_input / ($ex3_height_input/100)**2;
+    $ex3_result = $ex3_weight_input / pow($ex3_height_input/100, 2);
 }
 
 # Exercise 4
@@ -68,7 +68,7 @@ $ex4_hobbies_input = isset($_POST['ex4-hobbies']) ? $_POST['ex4-hobbies'] : '';
                     </div>
                     <div class="panel-footer">
                         Result:
-                        <?= $celsius_output ?>
+                        <?= round($ex1_celsius_output, 1) ?>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ $ex4_hobbies_input = isset($_POST['ex4-hobbies']) ? $_POST['ex4-hobbies'] : '';
                         </form>
                     </div>
                     <div class="panel-footer">
-                        Result: <?= $ex3_result ?>
+                        Result: <?= round($ex3_result, 1) ?>
                     </div>
                 </div>
             </div>
