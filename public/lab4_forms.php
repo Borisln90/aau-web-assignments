@@ -9,10 +9,13 @@
 </head>
 <body>
 
+<!-- START: Exercise 1 -->
 <h3>Exercise 1: Conditions</h3>
 <p><a href="lab4_ex1.php">Find exercise 1 here</a></p>
-
 <br>
+<!-- END: Exercise 1 -->
+
+<!-- START: Exercise 2a -->
 <h3>Exercise 2a: BMI calculator</h3>
 <form action="lab4_ex2a.php" method="get">
     <label for="ex2a-height">Your height in cm:</label>
@@ -21,8 +24,10 @@
     <p><input type="text" id="ex2a-weight" name="weight"></p>
     <input type="submit">
 </form>
-
 <br>
+<!-- END: Exercise 2a -->
+
+<!-- START: Exercise 2b -->
 <h3>Exercise 2b: Welcome message</h3>
 <form action="lab4_ex2b.php" method="get">
     <label for="ex2b-name">Your name:</label>
@@ -37,8 +42,10 @@
     </p>
     <input type="submit">
 </form>
-
 <br>
+<!-- END: Exercise 2b -->
+
+<!-- START: Exercise 3 -->
 <h3>Exercise 3: Profile information</h3>
 <form action="lab4_ex3.php" method="post">
     <label for="ex3-name">Your name:</label>
@@ -67,5 +74,7 @@
     </p>
     <input type="submit">
 </form>
+<!-- END: Exercise 3 -->
+
 </body>
 </html>
