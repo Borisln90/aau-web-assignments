@@ -20,7 +20,7 @@ function generate_messages($flavors) {
     return $html;
 }
 
-$input = $_POST['flavors'];
+$input = isset($_POST['flavors']) ? $_POST['flavors'] : ['nothing apparently'];
 $messages = generate_messages($input);
 
 ?>

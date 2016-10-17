@@ -18,6 +18,7 @@
     <p><input type="checkbox" name="flavors[]" value="licorice"> Licorice</p>
     <input type="submit">
 </form>
+<br>
 
 <h3>Exercise 2A</h3>
 <p><a href="lab7_ex2a.php">Click here to see exercise 2A</a></p>
