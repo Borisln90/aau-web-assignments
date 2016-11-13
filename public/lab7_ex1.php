@@ -1,27 +1,38 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Boris
+ * Web programming hand-in 2, exercise 1.
+ * User: Boris Lykke Nielsen, 20125327
  * Date: 17-10-2016
  * Time: 23:49
  */
 
-function generate_message($flavor) {
+/**
+ * Wraps a flavor in html.
+ * @param $flavor string Input.
+ * @return string Html formatted string.
+ */
+function html_generate_message($flavor) {
     return '<b>You like <em>'.$flavor.'</em></b>';
 }
 
-function generate_messages($flavors) {
+
+/**
+ * Wraps each input in <p> tags and formats the text.
+ * @param $flavors array Array of input strings.
+ * @return string Html formatted input strings.
+ */
+function html_generate_messages($flavors) {
     $html = '';
     foreach ($flavors as $flavor) {
         $html .= '<p>';
-        $html .= generate_message($flavor);
+        $html .= html_generate_message($flavor);
         $html .= '</p>';
     }
     return $html;
 }
 
-$input = isset($_POST['flavors']) ? $_POST['flavors'] : ['nothing apparently'];
-$messages = generate_messages($input);
+$input = isset($_POST['flavors']) ? $_POST['flavors'] : ['nothing apparently'];  // Provide default value to input
+$messages = html_generate_messages($input);
 
 ?>
 
