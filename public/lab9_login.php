@@ -1,11 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: boris
+ * Web programming hand-in 3, login page.
+ * User: Boris Lykke Nielsen, 20125327
  * Date: 07-11-2016
  * Time: 14:09
+ *
+ * Shows a login form redirecting to lab9_menu.php.
  */
-session_start();
 
 ?>
 
@@ -23,7 +24,7 @@ session_start();
     <p>Please enter your username and password to log in to the Awesome Movie Database</p>
     <p>
         <label for="lab9_login_username">Username
-            <input type="text" id="lab9_login_username" name="username">
+            <input type="text" id="lab9_login_username" name="username" value="<?= $_GET['u'] ?>">
         </label>
     </p>
     <p>
